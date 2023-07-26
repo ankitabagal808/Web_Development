@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+
+    <style>
+         body{
+            margin: 20px;
+         }
+         #Container{
+            padding: 15px;
+            border: 2px solid blue;
+         }
+         .Main-Container{
+            border: 2px solid red;
+            margin: 5px;
+            padding: 10px;
+         }
+         .Main-Container{
+            display: inline-block;
+            border: 2px solid brown;
+            width: 49px;
+         }
+         #Container>section{
+            border: 1px solid green;
+            padding: 20px;
+         }
+         .main-one p{
+            color: orange;
+            text-align: center;
+            padding: 10px;
+         }
+         section>.Container01{
+            background-color: aqua;
+         }
+         .main div{
+            background-color: gray;
+         }
+         .main div>p{
+            text-align: center;
+            color: white;
+         }
+         
+    </style>
+</head>
+<body>
+    <h1>Combinator Selector</h1>
+    <section id="Container">
+        <section class="Container01">
+            <main class="Main-Container main-one">
+                <div id="Div01" class="Main-Child-div">
+                    <p>Demo Data 01</p>
+                    <p>Demo Data 02</p>
+                    <p>Demo Data 03</p>
+                    <p>Demo Data 04</p>
+                    <p>Demo Data 05</p>
+                </div>
+                <div class="Main-Child-div">
+                    <p>Demo Data 01</p>
+                    <p>Demo Data 01</p>
+                    <p>Demo Data 01</p>
+                    <p>Demo Data 01</p>
+                    <p>Demo Data 01</p>
+                </div>
+            </main>
+            <main class="Main-Container main">
+                <div id="Div" class="Main-Child-div">
+                    <p>Demo Data 01</p>
+                    <p>Demo Data 02</p>
+                    <p>Demo Data 03</p>
+                    <p>Demo Data 04</p>
+                    <p>Demo Data 05</p>
+                </div>
+                <div class="Main-Child-div">
+                    <p>Demo Data 01</p>
+                    <p>Demo Data 01</p>
+                    <p>Demo Data 01</p>
+                    <p>Demo Data 01</p>
+                    <p>Demo Data 01</p>
+                </div>
+            </main>
+        </section>
+        <section class="Container02">
+            <article>
+                <img src="D:\HTML\Ankita_Fork\Web_Batch\Assets\IMG_20180216_165312_HDR.jpg"alt="Flower"height="200px">
+                <div>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil accusantium vero, atque maxime ut, fugiat mollitia sint nulla explicabo ratione assumenda neque cupiditate illo consectetur consequatur nam deserunt minus. Eveniet.
+                </div>
+            </article>
+        </section>
+    </section>
+</body>
+</html>
